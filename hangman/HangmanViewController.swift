@@ -36,12 +36,12 @@ class HangmanViewController: UIViewController {
         secret_word_var = word_list[nb]
         var cnt = 0;
         for c in secret_word_var {
-            if (cnt == 0 && Level < 3) || (cnt == secret_word_var.count - 1 && Level < 1) {
+            if (cnt == 0 && Level < 2) || (cnt == secret_word_var.count - 1 && Level < 1) {
                 secret_word.text?.append(c)
             } else {
                 secret_word.text?.append("-")
             }
-            cnt += 1
+            cnt += 1 
         }
     }
     
