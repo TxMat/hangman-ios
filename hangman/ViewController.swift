@@ -18,8 +18,11 @@ class ViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let a = sender! as! HangmanViewController
-        a.Level = 2;
+        let btn = sender! as! UIButton
+        print("tag = \(btn.tag)")
+        if let a = segue.destination as? HangmanViewController {
+            a.Level = btn.tag
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
