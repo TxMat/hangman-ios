@@ -23,7 +23,7 @@ class HangmanViewController: UIViewController {
         "PEPPERONI",
     ]
     var secret_word_var: String = ""
-
+    
     @IBOutlet weak var hang_image: UIImageView!
     @IBOutlet weak var alert: UILabel!
     @IBOutlet weak var secret_word: UILabel!
@@ -41,25 +41,32 @@ class HangmanViewController: UIViewController {
             } else {
                 secret_word.text?.append("-")
             }
-            cnt += 1 
+            cnt += 1
         }
     }
     
     @IBAction func letter_pressed(_ sender: UIButton) {
         let ltr = sender.titleLabel!.text!.first!
-        if secret_word_var.contains(ltr) {
+        var tmp = secret_word.text!
+        sender.isEnabled = false
+        if secret_word_var.contains(ltr) && !tmp.contains(ltr) {
             // reveal
-            secret_word.text = ""
-            for c in secret_word_var {
+            for (c, v) in zip(secret_word_var, tmp) {
                 if c == ltr {
-                    secret_word.text?.append(c)
+                    v = c
                 } else {
                     secret_word.text?.append("-")
                 }
             }
+            secret_word.text! = tmp
         } else {
-            // bad
+            inc_hangman()
         }
+    }
+    
+    func inc_hangman() {
+        let new_img: UIImage = UIImage(imageLiteralResourceName: "Pendu0")
+        hang_image.image = ""
     }
     
     func GameOver() {
@@ -67,5 +74,5 @@ class HangmanViewController: UIViewController {
     }
     
     
-
+    
 }
