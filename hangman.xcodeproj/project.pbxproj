@@ -13,6 +13,7 @@
 		452C1A272D68B276001A9F14 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 452C1A262D68B276001A9F14 /* Base */; };
 		452C1A292D68B277001A9F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 452C1A282D68B277001A9F14 /* Assets.xcassets */; };
 		452C1A2C2D68B277001A9F14 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 452C1A2B2D68B277001A9F14 /* Base */; };
+		452C1A342D68B77F001A9F14 /* HangmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C1A332D68B77F001A9F14 /* HangmanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		452C1A282D68B277001A9F14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		452C1A2B2D68B277001A9F14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		452C1A2D2D68B277001A9F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		452C1A332D68B77F001A9F14 /* HangmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangmanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				452C1A212D68B276001A9F14 /* SceneDelegate.swift */,
 				452C1A232D68B276001A9F14 /* ViewController.swift */,
 				452C1A252D68B276001A9F14 /* Main.storyboard */,
+				452C1A332D68B77F001A9F14 /* HangmanViewController.swift */,
 				452C1A282D68B277001A9F14 /* Assets.xcassets */,
 				452C1A2A2D68B277001A9F14 /* LaunchScreen.storyboard */,
 				452C1A2D2D68B277001A9F14 /* Info.plist */,
@@ -141,6 +144,7 @@
 				452C1A242D68B276001A9F14 /* ViewController.swift in Sources */,
 				452C1A202D68B276001A9F14 /* AppDelegate.swift in Sources */,
 				452C1A222D68B276001A9F14 /* SceneDelegate.swift in Sources */,
+				452C1A342D68B77F001A9F14 /* HangmanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
